@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -10,6 +11,10 @@ import { InicioComponent } from './inicio/inicio.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { EstadisticasComponent } from './estadisticas/estadisticas.component';
 import { BusquedasComponent } from './busquedas/busquedas.component';
+
+
+import { DxChartModule, DxSelectBoxModule } from 'devextreme-angular';
+
 
 
 @NgModule({
@@ -23,7 +28,9 @@ import { BusquedasComponent } from './busquedas/busquedas.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ClarityModule
+    ClarityModule,
+    DxChartModule,
+    DxSelectBoxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

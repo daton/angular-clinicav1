@@ -1,3 +1,33 @@
-<p>
-  estadisticas works!
-</p>
+<h3>Estadísticas</h3>
+<div id="chart-demo">
+  <dx-chart
+      title="Incidencias por Hospital(Marzo)"
+      palette="Harmony Light"
+      [dataSource]="populationData">
+      <dxi-series valueField="y1564" name="Inasistencias"></dxi-series>
+      <dxi-series valueField="y014" name="Sin material"></dxi-series>
+      <dxi-series valueField="y65" name="Laboratorios sucios}"></dxi-series>
+      <dxo-common-series-settings
+    #commonSeries
+          argumentField="country"
+          [type]="types[0]">
+      </dxo-common-series-settings>
+      <dxo-margin [bottom]="20"></dxo-margin>
+      <dxo-argument-axis [valueMarginsEnabled]="false"></dxo-argument-axis>
+      <dxo-export [enabled]="true"></dxo-export>
+      <dxo-legend
+          verticalAlignment="bottom"
+          horizontalAlignment="center">
+      </dxo-legend>
+  </dx-chart>
+  <div class="options">
+      <div class="caption">Opciones</div>
+      <div class="option">              
+          <span>Tipo de serie</span> 
+          <dx-select-box
+              [dataSource]="types"
+              [(value)]="commonSeries.type">
+          </dx-select-box>
+       </div>   
+  </div>
+</div>
