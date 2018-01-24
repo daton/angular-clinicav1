@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { InicioComponent } from './inicio/inicio.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { EstadisticasComponent } from './estadisticas/estadisticas.component';
+import { BusquedasComponent } from './busquedas/busquedas.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { EstadisticasComponent } from './estadisticas/estadisticas.component';
     AppComponent,
     InicioComponent,
     DashboardComponent,
-    EstadisticasComponent
+    EstadisticasComponent,
+    BusquedasComponent
   ],
   imports: [
     BrowserModule,

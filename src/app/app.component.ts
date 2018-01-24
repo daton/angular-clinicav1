@@ -9,7 +9,7 @@ import {Router} from '@angular/router';
 export class AppComponent {
   title = 'app';
   constructor(private router:Router){
-    this.router.navigate(["/dashboard"],{skipLocationChange:true});
+    //this.router.navigate(["/dashboard"],{skipLocationChange:true});
 //   this.router.navigate(["/principal"],{skipLocationChange:true});
 }
 }
