@@ -1,26 +1,41 @@
 <div class="main-container">
-  <header class="header-2">
+  <header class="header-6">
     <div class="branding">
         <a class="nav-link">
             <clr-icon shape="home"  size="24"></clr-icon>
-            <span class="title">Project Clarity</span>
+            <span class="title">Clínica V1</span>
         </a>
     </div>
     <div class="header-nav">
-        <a class="active nav-link nav-text">Home</a>
+        <a class="active nav-link nav-text">Inicio</a>
+        <a class="nav-link nav-text">Administración</a>
     </div>
 </header>
   <div class="content-container">
       <div class="content-area">
-          <h3>Clarity Starter Instructions:</h3>
-          <ul>
-            <li>Start by clicking Fork in the toolbar above.</li>
-            <li>Implement the problem in the new editor.</li>
-            <li>Save the result, and share the url in a GitHub or StackOverflow issue.</li>
-          </ul>
+          <h3>Dashboard</h3>
+          Contenido principal
       </div>
       <nav class="sidenav">
-      <a href="#" >Enlace 1</a>
+        <section class="sidenav-content">
+          <a class="nav-link active">Inicio</a>
+          <section class="nav-group collapsible">
+            <input id="tabexample1" type="checkbox">
+            <label for="tabexample1">Incidencias</label>
+            <ul class="nav-list">
+              <li><a class="nav-link">Búsquedas</a></li>
+              <li><a class="nav-link">Estadísticas</a></li>
+            </ul>
+          </section>
+          <section class="nav-group collapsible">
+            <input id="tabexample2" type="checkbox">
+            <label for="tabexample2">Reportes</label>
+            <ul class="nav-list">
+              <li><a class="nav-link">Generar</a></li>
+              <li><a class="nav-link">Descargas</a></li>
+            </ul>
+          </section>
+        </section>
     </nav>
   </div>
 </div>
